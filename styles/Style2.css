@@ -1,0 +1,293 @@
+/*INICIO SELECCION*/
+*::-moz-selection {
+    color: #ffffff;
+    background-color: #1f242c;
+  }
+  
+  *::selection {
+    color: #ffffff;
+    background-color: #1f242c;
+  }
+  /*FIN SELECCION*/
+  
+  /*INICIO FUENTES*/
+@font-face {
+  font-family: "Presley";
+  src: url("Fuentes/Coffee\ and\ Crafts.ttf");
+}
+/*FIN FUENTES*/
+  
+  /*INICIO SCROLL*/
+  *::-webkit-scrollbar {
+    color: #13161d;
+  }
+  *::-webkit-scrollbar-track{
+    background-color: #3d3d3f;
+    
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #13161d;
+    border-radius: 10px;
+  }
+  /*FIN SCROLL*/
+
+
+*{
+color: #ffffff;
+}
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #3d3d3f;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+  }
+  
+  .sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 30px;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: 1s; 
+    padding-top: 5px;
+  }
+  
+  .sidebar .boton-cerrar:hover {
+    background-color: #3d3d3f;
+  }
+  
+  .sidebar ul, .sidebar li{
+    padding-top:20px;
+    list-style:none inside;
+    background-color:#3d3d3f;
+    transition: 1s; 
+  }
+  
+  .sidebar ul {
+    display: block;
+    width: 100%;
+    min-width:10px;
+    transition: 1s; 
+    font-size: 13px;
+  }
+  
+  .sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none; 
+    transition: 1s; 
+  }
+
+  .Seleccion{
+    width: 300px;
+    padding: 10px;
+    font-family: "Show";
+  }
+  
+  .Seleccion:hover{
+    background-color: #1b1b24;
+    width: 300px;
+    transition: 1s; 
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  #contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+  }
+  
+  #contenido a{
+    color: #3d3d3f;
+    width: 300px;
+  }
+  
+  .abrir-cerrar {
+    color: #3d3d3f;
+    font-size:1rem;  
+    transition: margin-left .4s; 
+    margin-right: 0px;
+  }
+  
+  #abrir {
+    transition: margin-left .4s;
+  }
+  #cerrar {
+    display:none;
+    transition: margin-left .4s;
+  }
+
+  #barra{
+    align-items: start;
+}
+
+.zoom {
+  transition: transform 1s; 
+}
+
+.zoom:hover {
+  transform: scale(1.2); 
+}
+
+
+.zoom2 {
+  margin-top: 20px;
+  padding-left: 30px;
+  transition: transform 1s; 
+}
+
+.zoom2:hover {
+  transform: scale(1.2); 
+}
+
+.body{
+  background: #292b30;
+}
+
+
+/* INICIO CONTACTO */
+.titulos{
+  color: var(--rosa);
+  font-family: var(--font-titulo);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 50px 10px;
+  font-family: "Presley";
+
+  border: 2px solid #00000075;
+  border: 10px ;
+  font-weight:bold;
+  text-shadow: -2px -2px 50px #036374, 2px -2px 0 #12545f, 2px 2px 0 #12545f, -2px 2px 0 #12545f;
+}
+
+.informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.enlace {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--negro);
+  font-weight: 600;
+}
+
+.icono{
+height: 45px;
+transition: all 1s ease;
+transition: transform 1s ease;
+}
+
+.parrafo{
+  font-family: "Presley";
+  font-size: 25px;
+  letter-spacing: 3px;
+  transition: all 1s ease;
+}
+
+.enlace:hover .parrafo {
+  text-shadow: -2px -2px 50px #036374, 2px -2px 0 #12545f, 2px 2px 0 #12545f, -2px 2px 0 #12545f;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(50px);
+  
+}
+
+.enlace:hover .icono {
+  text-shadow: -2px -2px 50px #036374, 2px -2px 0 #12545f, 2px 2px 0 #12545f, -2px 2px 0 #12545f;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(50px) rotate(360deg);
+
+}
+
+.seccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-color: var(--gris-claro);
+  padding: 20px 0;
+  margin-bottom: 1rem;
+}
+
+.mapa {
+  margin-top: 1rem;
+  float: right;
+  border: 1px solid var(--rosa);
+  width: 40vw;
+  height: 450px;
+}
+
+.us {
+  color: var(--rosa);
+  font-family: var(--font-titulo);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6rem;
+  padding: 50px 10px;
+  font-family: "Presley";
+
+  border: 2px solid #00000075;
+  border: 10px ;
+  font-weight:bold;
+  text-shadow: -2px -2px 50px #036374, 2px -2px 0 #12545f, 2px 2px 0 #12545f, -2px 2px 0 #12545f;
+  
+}
+
+/* FIN CONTACTO */
+
+.Mision{
+padding-top: 50px;
+}
+
+.divisor{
+margin-left: 50px;
+font-family: "Presley";
+font-size: 35px;
+margin-top: 10px;
+}
+
+.divisor2{
+  margin-left: 80px;
+  font-family: "Presley";
+  font-size: 35px;
+  margin-top: 10px;
+  }
